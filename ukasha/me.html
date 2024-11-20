@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IUB University - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #e9f7ef;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #28a745;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(
+              rgba(40, 167, 69, 0.7),
+              rgba(40, 167, 69, 0.7)
+            ),
+            url('') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 20px;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 60px 0;
+        }
+        .content-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* Cards with Background Colors */
+        .card {
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .card-1 {
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+        }
+        .card-2 {
+            background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+        }
+        .card-3 {
+            background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+        }
+        .card h5 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .card p {
+            font-size: 16px;
+            margin-top: 15px;
+            color: #f1f1f1;
+        }
+        .card .btn {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: #fff;
+        }
+        .card .btn:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2d3436;
+            color: #b2bec3;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #b2bec3;
+        }
+
+        /* Admission Form Styles */
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 30px auto;
+        }
+        .form-container h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-control:focus {
+            border-color: #28a745;
+            box-shadow: none;
+        }
+        .btn-primary {
+            background-color: #28a745;
+            border-color: #28a745;
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+
+        /* Contact Form Styles */
+        #contact form .form-control:focus {
+            border-color: #28a745;
+            box-shadow: none;
+        }
+        #contact form .btn-primary {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        #contact form .btn-primary:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">The Islamia University OF Bahawalpur</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#programs">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#admission">Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to IUB University</h1>
+            <p>Your Future Begins Here</p>
+            <a href="#admission" class="btn btn-light btn-lg mt-4">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="content-section" id="programs">
+        <div class="container">
+            <h2 class="text-center">Our Programs</h2>
+            <div class="row">
+                <!-- Program 1 -->
+                <div class="col-md-4">
+                    <div class="card card-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Undergraduate Programs</h5>
+                            <p class="card-text">Discover a range of undergraduate courses designed to kickstart your career.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Program 2 -->
+                <div class="col-md-4">
+                    <div class="card card-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Postgraduate Programs</h5>
+                            <p class="card-text">Advance your knowledge with our specialized postgraduate courses.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Program 3 -->
+                <div class="col-md-4">
+                    <div class="card card-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctoral Studies</h5>
+                            <p class="card-text">Engage in advanced research with our doctoral programs.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form Section -->
+    <section class="content-section bg-light" id="admission">
+        <div class="container">
+            <div class="form-container">
+                <h2>Admission Form</h2>
+                <form>
+                    <!-- Personal Information Section -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fullName"
+                          placeholder="Enter your full name"
+                          required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Enter your email"
+                          required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="phone"
+                          placeholder="Enter your phone number"
+                          required
+                        />
+                    </div>
+
+                    <!-- Gender Selection -->
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              name="gender"
+                              id="male"
+                              value="male"
+                              required
+                            />
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              name="gender"
+                              id="female"
+                              value="female"
+                              required
+                            />
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="form-group">
+                        <label for="program">Select Program</label>
+                        <select class="form-control" id="program" required>
+                            <option value="">Select Program</option>
+                            <option value="ug">Undergraduate Program</option>
+                            <option value="pg">Postgraduate Program</option>
+                            <option value="phd">Doctoral Program</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="dob"
+                          required
+                        />
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea
+                          class="form-control"
+                          id="address"
+                          rows="3"
+                          placeholder="Enter your address"
+                          required
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section" id="contact">
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+            <p class="text-center">
+                If you have any questions, feel free to contact us.
+            </p>
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><strong>Address:</strong> IUB Bahawalpur</p>
+                    <p><strong>Phone:</strong> 03083138330</p>
+                    <p><strong>Email:</strong> @iub.edu.pk</p>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <h5>Send a Message</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="contactName"
+                              placeholder="Your Name"
+                              required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="contactEmail"
+                              placeholder="Your Email"
+                              required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea
+                              class="form-control"
+                              id="contactMessage"
+                              rows="3"
+                              placeholder="Your Message"
+                              required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>
+                &copy; 2023 IUB University. All rights reserved.
+            </p>
+            <p>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    ></script>
+</body>
+</html>
